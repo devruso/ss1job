@@ -44,6 +44,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
@@ -148,9 +149,35 @@ h4 {
 .col-4 P {
   font-size: 14px;
 }
+
 .rating .fa {
   color: #fa6398;
 }
 .col-4:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+}
+.offer {
+  background: linear-gradient(#fff, #fa6398);
+  margin-top: 80px;
+  padding: 30px 0;
+  width: auto;
+}
+.col .offer-img {
+  padding: 50px;
+}
+small {
+  color: #555;
+}
+/* TESTIMONILAL */
+.testimonial {
+  padding-top: 100px;
+}
+.testimonial .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+}
+.testimonial .col-3 img {
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
 }
