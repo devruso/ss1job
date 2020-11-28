@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweet Secrets</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -27,7 +28,7 @@
             />
           </div>
           <nav>
-            <ul>
+            <ul id="menuItems">
               <li><a href="">Home</a></li>
               <li><a href="products.html">Products</a></li>
               <li><a href="">About</a></li>
@@ -36,45 +37,34 @@
             </ul>
           </nav>
           <img src="images/shopping-cart.png" height=" 30px" width="30px" />
-          <img src="images/hamburger.png" class="menu-icon" />
+          <img
+            src="images/hamburger.png"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
         </div>
-        <div class="row">
-          <div class="col-2">
-            <h1>O SEX SHOP MAIS ESTOURADO DE SALVADOR AGORA TEM SITE!</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim.
-            </p>
-            <!-- //* adicionar outro botão para redirecionar ao whatsapp *\ -->
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>O SEX SHOP MAIS ESTOURADO DE SALVADOR AGORA TEM SITE!</h1>
+          <p>
+            Aqui você garante os melhores produtos com preço justo! Em compras a
+            partir de R$50.00 você adquire um cupom com 10%off na próxima compra
+            com validade de 2 meses! Retire no local ou receba na sua casa! Nos
+            contate para mais informações e garanta produtos de qualidade que
+            irá tirar você da rotina.
+          </p>
+          <a href="products.html" class="btn">Conheça os produtos &#8594;</a>
+          <a href="https://wa.me/message/WAQ5TVB3XOSEN1" class="btn-wa"
+            ><strong>Vem de Zap &#8594;</strong></a
+          >
+        </div>
+        <div class="col-2">
+          <img src="images/4957.png" alt="AAAAAAAAAAAAAA" />
+        </div>
+      </div>
+    </div>
 
-            <a href="products.html" class="btn">Conheça os produtos &#8594;</a>
-            <a href="" class="btn-wa"><strong>Vem de Zap &#8594;</strong></a>
-          </div>
-          <div class="col-2">
-            <img src="images/4957.png" alt="AAAAAAAAAAAAAA" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- categorias-->
-    <div class="categories">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-3">
-            <img src="" alt="" />
-          </div>
-          <div class="col-3">
-            <img src="" alt="" />
-          </div>
-          <div class="col-3">
-            <img src="" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- principais categorias-->
     <div class="categories">
       <div class="small-container">
@@ -191,7 +181,7 @@
               <i class="fa fa-star"></i>
             </div>
 
-            <img src="images/pp.jpg " alt="SILHOUETTE MASK" />
+            <img src="images/pp.jpg " />
             <h3>MILSINHO</h3>
           </div>
           <div class="col-3">
@@ -209,7 +199,7 @@
               <i class="fa fa-star"></i>
             </div>
 
-            <img src="images/pp.jpg " alt="SILHOUETTE MASK" />
+            <img src="images/pp.jpg " />
             <h3>MILSINHO</h3>
           </div>
           <div class="col-3">
@@ -246,10 +236,14 @@
             <p>Deixando a vida do soteropolitano mais prazeirosa!</p>
           </div>
           <div class="footer-col-3">
-            <h3>LINKS UTEIS</h3>
+            <h3>LINKS ÚTEIS</h3>
             <ul>
-              <li><a href="#">entre em contato</a></li>
-              <li>blog post</li>
+              <li>
+                <a href="mailto:Sweetsecrets.shop19@gmail.com"
+                  >Nos envie um email</a
+                >
+              </li>
+              <li><a href="">Facebook</a></li>
               <li>blog post</li>
               <li>blog post</li>
             </ul>
@@ -267,5 +261,18 @@
         <p class="copyright">copyright 2020 - Jamilson Júnior</p>
       </div>
     </div>
+    <!-- ----------------- javascript para abrir menu-->
+    <script>
+      const menuItems = document.getElementById("menuItems");
+      menuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight = "200px";
+        } else {
+          menuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>
